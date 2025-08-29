@@ -13,7 +13,7 @@ app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'sta
 app.config['SECRET_KEY'] = 'bztradewave_secret_key_2024_australia'
 
 # Enable CORS for all routes
-CORS(app, origins=['https://bztradewave.au', 'https://www.bztradewave.au', 'http://localhost:5173' ,'*'])
+CORS(app, origins=['https://bztradewave.au', 'https://www.bztradewave.au','https://bztrd.netlify.app/' ,'http://localhost:5173' ,'*'])
 
 # Register blueprints
 app.register_blueprint(auth_bp, url_prefix='/api/auth')
